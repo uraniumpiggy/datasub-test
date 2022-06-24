@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(45deg, #4158D0, #C850C0, #FFCC70);
+}
+
+.submitButton:hover {
+  background: linear-gradient(270deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: auto 100%;
+  color: white;
+  animation: gradient 300s ease infinite;
+}
+
+.textField {
+  box-shadow: 4px 4px 8px 0px rgba(180, 32, 225, 0.2);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+@keyframes gradient {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
